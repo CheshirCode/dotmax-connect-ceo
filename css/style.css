@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,700;0,900;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@font-face {
+	font-family: "landroverweb_bold";
+	src: url("../fonts/landroverweb_bold.eot");
+	src: local("☺"), url("../fonts/landroverweb_bold.woff") format("woff"), url("../fonts/landroverweb_bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FrozenCrystal";
+	src: url("../fonts/FrozenCrystal.eot");
+	src: local("☺"), url("../fonts/FrozenCrystal.woff") format("woff"), url("../fonts/FrozenCrystal.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Обнуление страницы ===================================================================================== */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+	font-size: inherit;
+}
+
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+html,
+body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	font-size: 16px;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+/* Color Theme Swatches in Hex */
+.csheme-1-hex {
+	color: #0468BF;
+}
+
+.csheme-2-hex {
+	color: #F2B705;
+}
+
+.csheme-3-hex {
+	color: #F28705;
+}
+
+.csheme-4-hex {
+	color: #F25C05;
+}
+
+.csheme-5-hex {
+	color: #F21905;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	min-height: 100%;
+	background-image: url('..//img/network.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	Background-attachment: fixed;
+	position: relative;
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1200px;
+
+}
+
+.toTop {
+	border: 1px solid #000;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background-color: #005c53cb;
+	margin: 10px;
+	padding: 15px;
+	color: #fff;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	z-index: 5;
+}
+
+.toTop:hover {
+	background-color: #003530cc;
+}
+
+.logo__body {
+	border: 2px solid #DFEBEA;
+	border-radius: 10px;
+	margin: 15px;
+	padding: 20px;
+	display: flex;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.logo__text {
+	font-family: Montserrat;
+	color: rgb(255, 0, 4);
+	font-size: 2rem;
+	font-weight: 900;
+	flex: 1 1 80%;
+}
+
+.logo__text span {
+
+	color: rgb(255, 0, 4);
+	font-size: 2rem;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.warning {
+	flex: 1 1 20%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.warning__text {
+	font-size: 1rem;
+}
+
+.main {
+	flex: 1 1 auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+.ceo__container,
+.fines__container,
+.mechanics__container,
+.accounting__container,
+.search_field__container,
+.repair__container,
+.logistics__container,
+.sublogistics__container,
+.warehouse__container,
+.delievery__container,
+.subdivision__container,
+.security__container {
+	margin: 15px;
+	padding: 10px;
+	border: 2px solid #DFEBEA;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.589);
+}
+
+@supports (-webkit-touch-callout: none) {
+
+	/* CSS specific to iOS devices */
+	.ceo__container,
+	.fines__container,
+	.mechanics__container,
+	.accounting__container,
+	.search_field__container,
+	.repair__container,
+	.logistics__container,
+	.sublogistics__container,
+	.warehouse__container,
+	.delievery__container,
+	.subdivision__container,
+	.security__container {
+		position: relative;
+		padding: 10px;
+		border: 2px solid #DFEBEA;
+		border-radius: 10px;
+		background: rgba(0, 0, 0, 0.589);
+		margin: 15px;
+	}
+}
+
+@supports not (-webkit-touch-callout: none) {
+	/* CSS for other than iOS devices */
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+	.ceo__container,
+	.fines__container,
+	.mechanics__container,
+	.accounting__container,
+	.search_field__container,
+	.repair__container,
+	.logistics__container,
+	.sublogistics__container,
+	.warehouse__container,
+	.delievery__container,
+	.subdivision__container,
+	.security__container {
+		position: relative;
+		padding: 10px;
+		border: 2px solid #DFEBEA;
+		border-radius: 10px;
+		background: rgba(0, 0, 0, 0.589);
+		margin: 15px;
+	}
+}
+
+.ceo__body,
+.fines__body,
+.mechanics__body,
+.accounting__body,
+.search_field__container,
+.repair__body,
+.logistics__body,
+.sublogistics__body,
+.warehouse__body,
+.delievery__body,
+.subdivision__body,
+.security__body,
+.input {
+	margin: 0 auto;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	font-family: "landroverweb_bold";
+	padding: 20px 0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+
+.phone__card {
+	margin: 15px 10px;
+	width: 30%;
+	height: 100%;
+	border-radius: 10px;
+	background-image: url('../img/black-metal-background-or-texture_88281-4080.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: contain;
+}
+
+.mechanics__body .phone__card {
+	background-image: url('../img/engineering-blueprint.jpg');
+	background-position: center;
+	object-fit: cover;
+}
+
+.accounting__body .phone__card {
+	background-image: url('../img/accounting3.jpg');
+	background-position: center;
+	object-fit: cover;
+}
+
+.logistics__body .phone__card {
+	background-image: url('../img/technology.jpg');
+	background-position: center;
+	object-fit: cover;
+}
+
+.sublogistics__body .phone__card {
+	background-image: url('../img/gorod-noch-ogni-moskva-siti-rossiia.jpg');
+	background-position: center;
+	object-fit: cover;
+}
+
+.repair__body .phone__card {
+	background-image: url('../img/diesel-engine.jpg');
+	/* background-position: center; */
+	/* object-fit: cover; */
+}
+
+.warehouse__body .phone__card {
+	background-image: url('../img/pallet.jpg');
+	background-position: center;
+	object-fit: cover;
+}
+
+.delievery__body .phone__card {
+	background-image: url('../img/road.jpg');
+	background-position: center;
+	object-fit: cover;
+}
+
+.subdivision__body .phone__card {
+	background-image: url('../img/traffic.jpg');
+	background-position: center;
+	object-fit: cover;
+}
+
+.security__body .phone__card {
+	background-image: url('../img/security.jpg');
+	background-position: center;
+	object-fit: cover;
+}
+
+/*
+@media (max-width: 720px) {
+
+	.phone__card {
+		margin: 10px 5px;
+	}
+} */
+
+.card-image {
+	margin: 10px;
+	display: inline-block;
+}
+
+.card-image img {
+	max-width: 100px;
+	max-height: 100px;
+	object-fit: contain;
+}
+
+.full-name__text {
+	padding: 10px 5px;
+	font-weight: 700;
+	color: #F2B705;
+}
+
+.job__title {
+	padding: 10px 5px;
+}
+
+.number-field {
+	color: #F2B705;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding-bottom: 10px;
+
+}
+
+.ceo__body,
+.fines__body,
+.subceo__body,
+.mechanics__body,
+.accounting__body,
+.search_field__container,
+.repair__body,
+.logistics__body,
+.sublogistics__body,
+.warehouse__body,
+.delievery__body,
+.subdivision__body,
+.security__body {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	margin: 15px;
+
+}
+
+
+@media (max-width:680px) {
+	.phone__card {
+		display: block;
+		width: 95%;
+	}
+
+	.ceo__body,
+	.fines__body,
+	.search_field__container,
+	.subceo__body,
+	.repair__body,
+	.logistics__body,
+	.sublogistics__body,
+	.warehouse__body,
+	.delievery__body,
+	.subdivision__body,
+	.security__body {
+		display: block;
+		position: relative;
+		justify-content: space-around;
+		text-align: center;
+		margin: 15px;
+		flex-wrap: wrap;
+	}
+}
+
+.phone__card.hide {
+	display: none;
+}
+
+#searchCard {
+	width: 90%;
+	height: 50px;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.5rem;
+	background: #302d2d;
+	border-radius: 5px;
+	color: #DFEBEA;
+	text-align: left;
+}
+
+
+
+.footer {
+	width: 100%;
+	min-height: 100px;
+	margin: 0 auto;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__body {
+
+	color: rgba(255, 0, 4, 0.63);
+}
+
+.footer__item {
+	margin: 20px;
+	padding: 10px;
+
+}
+
+.copyright {
+	text-align: center;
+	margin: 5px 10px;
+	padding: 10px;
+}
