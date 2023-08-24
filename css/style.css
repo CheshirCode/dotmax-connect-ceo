@@ -229,6 +229,7 @@ body.lock {
 .sublogistics__container,
 .warehouse__container,
 .delievery__container,
+.containers__container,
 .subdivision__container,
 .security__container {
 	margin: 15px;
@@ -251,6 +252,7 @@ body.lock {
 	.sublogistics__container,
 	.warehouse__container,
 	.delievery__container,
+	.containers__container,
 	.subdivision__container,
 	.security__container {
 		position: relative;
@@ -278,6 +280,7 @@ body.lock {
 	.sublogistics__container,
 	.warehouse__container,
 	.delievery__container,
+	.containers__container,
 	.subdivision__container,
 	.security__container {
 		position: relative;
@@ -299,6 +302,7 @@ body.lock {
 .sublogistics__body,
 .warehouse__body,
 .delievery__body,
+.containers__body,
 .subdivision__body,
 .security__body,
 .input {
@@ -368,6 +372,12 @@ h3 {
 	background-image: url('../img/diesel-engine.jpg');
 	/* background-position: center; */
 	/* object-fit: cover; */
+}
+
+.containers__body .phone__card {
+	background-image: url('../img/container2.jpg');
+	background-position: center;
+	object-fit: cover;
 }
 
 .warehouse__body .phone__card {
@@ -440,6 +450,7 @@ h3 {
 .repair__body,
 .logistics__body,
 .sublogistics__body,
+.containers__body,
 .warehouse__body,
 .delievery__body,
 .subdivision__body,
@@ -470,6 +481,7 @@ h3 {
 	.sublogistics__body,
 	.warehouse__body,
 	.delievery__body,
+	.containers__body,
 	.subdivision__body,
 	.security__body {
 		display: block;
