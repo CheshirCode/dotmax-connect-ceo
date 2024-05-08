@@ -1,6 +1,6 @@
 document.querySelector("#searchCard").oninput = function () {
   let val = this.value.trim();
-  this.value[0].toUpperCase();
+  val.charAt(0).toUpperCase() + val.slice(1);
 
   let searchItems = document.querySelectorAll(".searchCard .phone__card");
   if (val != "") {
